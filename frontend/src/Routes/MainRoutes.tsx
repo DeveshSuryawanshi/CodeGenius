@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import { Home } from '../Pages/Home'
 import {Interview} from "../Components/Interview"
 import { InterviewTypes } from '../Components/InterviewTypes'
-import { About } from '../Components/About'
-import { Contact } from '../Components/Contact'
+import { About } from '../Pages/About'
+import { Contact } from '../Pages/Contact'
 
 export const MainRoutes = () => {
   return (
