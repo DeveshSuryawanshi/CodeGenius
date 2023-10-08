@@ -14,9 +14,7 @@ export const MainRoutes = () => {
             <Route path='/interviews' element={<InterviewTypes/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/interview/mern' element={<Interview/>}/>
-            <Route path='/interview/java' element={<Interview/>}/>
-            <Route path='/interview/node' element={<Interview/>}/>
+            <Route path='/interview/:techStack' element={<Interview/>}/>
         </Routes>
     </div>
   )
