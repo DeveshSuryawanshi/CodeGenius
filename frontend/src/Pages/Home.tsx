@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import aiImage from "../assets/intervuew2.jpg";
+// import aiImage from "../assets/intervuew2.jpg";
+import aiImage from "../assets/pngwing2.png";
+import {Link} from "react-router-dom";
 
 
 export const Home = () => {
@@ -10,7 +12,9 @@ export const Home = () => {
       <div className="text">
         <h1>Have your <br />best <strong>Mock</strong> <br /> interview session</h1>
         <p>Ace Your Interviews with AI-Powered Practice Sessions.</p>
-        <button>Try it Free</button>
+        <Link to={"/interviews"}>
+           <button>Try it Free</button>
+        </Link>
       </div>
       <div className="image-container">
         <img src={aiImage} alt="" className="image" />
@@ -23,13 +27,15 @@ export const Home = () => {
 
 const DIV = styled.div`
   width: 100%;
+  height: 400px;
   background-color: #0a2640;
   display: flex;
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 130px;
   color: white;
   justify-content: space-evenly;
+
 h1{
   font-size:47px;
 }
@@ -45,7 +51,8 @@ h1{
   }
 
   .image {
-    width: 100%;
+    /* width: 100%; */
+    width: 400px;
     height: auto;
    
   }
@@ -68,8 +75,8 @@ h1{
   @media (max-width: 768px) {
     padding-top: 40px;
     padding-bottom: 60px;
-    width:100%
-    display:flex;
+    width:100%;
+    display: flex;
     flex-direction:column;
     padding-left:20px;
     padding-right:20px;
